@@ -3,4 +3,4 @@
 # Debian/Ubuntu. Defaults to the host's running release; override when the
 # upstream repo does not yet ship packages for the running release (e.g.
 # Ubuntu 26.04 hosts using the 24.04 / noble repo).
-stns_apt_distribution_release: "{{ ansible_distribution_release }}"
+stns_apt_distribution_release: "{{ ansible_facts['distribution_release'] }}"
